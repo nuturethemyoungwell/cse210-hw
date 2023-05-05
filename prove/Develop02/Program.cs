@@ -26,9 +26,27 @@ class Program
                 Console.WriteLine(menuItem);
             }
             menuUserInput = int.Parse(Console.ReadLine());
+            if (menuUserInput == 1)
+            {
+                journal.CreateJournalEntry();
+            }
+
+            else if (menuUserInput == 2)
+            {
+                journal.DisplayJournalEntry();
+            }
+
+            else if (menuUserInput == 3)
+            {
+                journal.LoadFromCSV();
+            }
+
+            else if (menuUserInput == 4)
+            {
+                journal.SaveToCSV();
+            }
         };
 
             //switch statement for user input
-        }
-    
+    }
 }
