@@ -59,6 +59,11 @@ class Journal
     public void LoadFromCSV()
     {
         string filename = "myFile.txt";
-        string[] lines = System.IO.File.ReadAllLines(filename);
+        string[] lines = File.ReadAllLines(filename);
+
+        foreach (string line in lines)
+        {
+            Console.WriteLine(line);
+        }
     }
 }
