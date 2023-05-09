@@ -11,11 +11,11 @@ class promptGenerator
     {
         _prompts = new List<string>
         {
-            "What would you to do? ",
-            "What made your best today?",
-            "What is the worse of your day?", 
-            "If you have a chance to make a wish, what would that be?",
-            "What would tomorrow?"
+            "Who was the most interesting person I interacted with today? ",
+            "What was the best part of my day?",
+            "How did I see the hand of the Lord in my life today?", 
+            "If I had one thing I could do over today, what would that be?",
+            "What was the strongest emotion i felt today?"
         };
     }
 
