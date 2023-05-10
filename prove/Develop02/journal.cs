@@ -52,7 +52,6 @@ class Journal
         {
             //Add text to the file
             outputFile.WriteLine();
-            
         }
     }
 
