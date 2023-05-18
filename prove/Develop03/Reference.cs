@@ -4,19 +4,22 @@ class Reference
 {
     private string book, chapter, verseStart, verseEnd;
 
+        //single verse
     public Reference(string _book, string _chapter, string _verse)
     {
         book = _book;
         chapter = _chapter;
         verseStart = _verse;
+        verseEnd = "";
     }
-
-    public Reference (string _book, string _chapter, string _verseStart, string verseEnd)
+        //multiple verses
+    public Reference (string _book, string _chapter, string _verseStart, string _verseEnd)
     {
-
+        book = _book;
+        chapter = _chapter;
+        verseStart = _verseStart;
+        verseEnd = _verseEnd;
     }
-
-
 
 
     public string GetReference()

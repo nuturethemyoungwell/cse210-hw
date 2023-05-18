@@ -56,7 +56,8 @@ class Scripture
 
     public void RemoveWords()
     {
-        int numWordsToRemove = new Random().Next(1, 3);
+        //number of words to be removed
+        int numWordsToRemove = new Random().Next(2, 4);
         int wordsRemoved = 0;
 
         do
