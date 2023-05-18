@@ -7,6 +7,19 @@ class Program
     {
         string pathName = @"C:\Users\User\OneDrive\Desktop\BYU\cse210-hw\Develop04\Develop04\myFile.txt";
         File.WriteAllText(pathName, "The type the scripture you just learnt");
+          //Now create a file using the file name above
+        FileStream fs = File.Create(pathName);
+
+        //check whether the file was created at the file path.
+        if (File.Exists(pathName))
+        {
+            Console.WriteLine ("File is created");
+            File.Create(pathName);
+        }
+        else
+        {
+            Console.WriteLine ("File was not created");
+        }
 
         Reference scriptureReference = new Reference("Jeremiah 13:", "15", "16", "17");
         Scripture scripture  = new Scripture(scriptureReference, "People of Israel, the Lord has spoken! Be humbele and listen to him. Honour" +
